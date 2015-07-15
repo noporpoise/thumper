@@ -11,5 +11,6 @@ clean:
 test: thumper
 	./thumper test.thumper.txt
 	./checker test.thumper.txt
+	rm -rf test.thumper.txt
 
 .PHONY: all clean test

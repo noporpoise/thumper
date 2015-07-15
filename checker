@@ -2,6 +2,11 @@
 
 set -eou pipefail
 
+if [ $# -ne 1 ]
+then
+  echo "Usage: $0 <file.txt>" && false
+fi
+
 echo "Checking thumper file: $1"
 i=0
 
